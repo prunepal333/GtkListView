@@ -13,7 +13,7 @@ class ModelColumns: public Gtk::TreeModel::ColumnRecord
 class ListView: public Gtk::TreeView
 {
     public:
-        ListView(std::vector<std::string>& v, std::string title);
+        ListView(const std::vector<std::string>& v, std::string title);
         ~ListView();
     private:
         Glib::RefPtr<Gtk::ListStore> ref_listStore;
