@@ -3,7 +3,7 @@
 // #include <vector>
 // #include <string>
 
-ListView::ListView(std::vector<std::string>& v, std::string title = "List")
+ListView::ListView(const std::vector<std::string>& v, std::string title = "List")
 {
     
     ref_listStore = Gtk::ListStore::create(m_Columns);
